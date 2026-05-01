@@ -140,9 +140,9 @@ if st.button("🔮 Predict Loan Approval", use_container_width=True):
     
     with col1:
         if prediction == 1:
-            st.success("✅ LOAN APPROVED", icon="✓")
+            st.success("✅ LOAN APPROVED")
         else:
-            st.error("❌ LOAN REJECTED", icon="✗")
+            st.error("❌ LOAN REJECTED")
     
     with col2:
         approval_prob = prediction_proba[1] * 100
